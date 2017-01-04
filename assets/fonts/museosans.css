@@ -1,0 +1,12 @@
+  
+@font-face {font-family: 'MuseoSans-500';src: url('webfonts/32B513_0_0.eot');src: url('webfonts/32B513_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/32B513_0_0.woff2') format('woff2'),url('webfonts/32B513_0_0.woff') format('woff'),url('webfonts/32B513_0_0.ttf') format('truetype');}
+
+@font-face {font-family: "Museo Sans W01 Rounded 500";
+  src: url("webfonts/d1d5329b68acf04104dda86957a8b2e9.eot"); /* IE9*/
+  src: url("webfonts/d1d5329b68acf04104dda86957a8b2e9.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("webfonts/d1d5329b68acf04104dda86957a8b2e9.woff2") format("woff2"), /* chrome、firefox */
+  url("webfonts/d1d5329b68acf04104dda86957a8b2e9.woff") format("woff"), /* chrome、firefox */
+  url("webfonts/d1d5329b68acf04104dda86957a8b2e9.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("webfonts/d1d5329b68acf04104dda86957a8b2e9.svg#Museo Sans W01 Rounded 500") format("svg"); /* iOS 4.1- */
+}
+ 

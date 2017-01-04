@@ -1,0 +1,43 @@
+/* Variables */
+@set {
+  textColor: #565659;
+  accentColor: #5BBFC3;
+  blueColor: #53C0D6;   
+  bgColor: #F1F2F5;
+  footerBgColor: #454850;
+  divColor: #F1F2F5;
+}
+
+/* fonts */
+.MuseoSans {
+    @name MuseoSans;
+    font-family: 'MuseoSans-500', sans-serif;
+}
+
+.MuseoSansRound {
+    @name MuseoSansRound;
+    font-family: 'Museo Sans W01 Rounded 500', sans-serif;
+}
+
+.OpenSans {
+    @name OpenSans;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* transition */
+.ease {
+    transition: .2s ease-in-out;
+}
+
+/* text Settings */
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}

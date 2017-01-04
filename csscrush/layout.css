@@ -1,0 +1,94 @@
+
+/* Grid */
+@mixin spanWidth  { /*Grid generation mixin*/
+    @set{
+    totalColumns: 12;
+    gutterWidth: 1.5%;
+    numColumns: #(0);
+    numGutters: math($(totalColumns) - 1);
+    gutterSpace: math($(numGutters) * $(gutterWidth));
+    remainingSpace: math(100 - $(gutterSpace));
+    columnWidth: math($(remainingSpace) / $(totalColumns));
+    totalWidth: math($(numColumns) * $(columnWidth) + $(gutterWidth) * $(numColumns) - 1, %);
+    }
+	
+	width: $(totalWidth);
+}
+
+.col{
+  float: left;
+  padding-left: 1.5%;
+  box-sizing:border-box;
+}
+
+
+
+
+@for base in range(1, 11) /* loop up to the 11th col */ { 
+    .col-span-#(base) {
+      @include spanWidth(#(base));
+    }
+}
+
+.col-span-12 { 
+    width: 100%;
+}
+
+/* Basic Styles */
+
+.wrapper {
+    margin: auto;
+    width: 1140px;
+}
+
+.wrapper:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+section {
+        padding: 20px 0;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background: #DCDDE0;
+    margin: 0 15px;
+}
+
+/* Heading and Titles */
+ h1.title {
+        display: block;
+        font-size: px2rem(26);
+        padding: 20px 0;
+        font-weight: 600;
+    }
+
+/* buttons */
+.btn {
+    padding: 15px 25px;
+}
+
+/* Responsify Defaults */
+
+.mobileNav {
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    .wrapper, .col {
+        width: 100%;
+    }
+    
+    .desktopNav {
+        display: none;
+    }
+    
+    .mobileNav {
+        display: block;
+    }
+    
+    
+}

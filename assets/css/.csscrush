@@ -1,0 +1,43 @@
+{
+    "style.css": {
+        "imports": [
+            "..\/assets\/fonts\/museosans.css",
+            "variables.css",
+            "base.css",
+            "layout.css",
+            "module.css",
+            "nav.css",
+            "snippets.css"
+        ],
+        "datem_sum": 11858548678,
+        "options": {
+            "minify": "true",
+            "formatter": "single-line",
+            "versioning": true,
+            "boilerplate": true,
+            "vars": [],
+            "cache": true,
+            "context": null,
+            "output_file": null,
+            "output_dir": ".\/assets\/css\/",
+            "asset_dir": null,
+            "doc_root": null,
+            "vendor_target": "all",
+            "rewrite_import_urls": true,
+            "plugins": [
+                "color",
+                "ease",
+                "forms",
+                "ie-opacity",
+                "loop",
+                "px2em",
+                "rem",
+                "hocus-pocus"
+            ],
+            "settings": [],
+            "stat_dump": false,
+            "source_map": false,
+            "newlines": "use-platform"
+        }
+    }
+}

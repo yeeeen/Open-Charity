@@ -1,0 +1,312 @@
+/* Logo */
+
+#topLogo a {
+    background-image: url("../assets/img/OC_Logo@3x.png");
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 2px 0;
+    opacity: 10;
+    @include .ease;
+}
+
+#topLogo a:hover {
+    opacity: 0.80;
+}
+
+
+/* hero section */
+
+.heroPage {
+    text-align: center;
+    background: url("../assets/img/welcomeHero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 80px 0;
+    h1.welcomeTitle {
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: px2rem(50);
+        @include .MuseoSansRound;
+        padding: 20px 0;
+    }
+    div.welcomeMsg {
+        width: 30%;
+        margin: auto;
+        p {
+            line-height: 220%;
+            margin: 20px 0;
+        }
+    }
+}
+
+
+/* event strip */
+
+.eventStrip {
+    background: $(bgColor);
+    padding: 40px 0;
+    @include .MuseoSans;
+    div.next-event {
+        color: $(textColor);
+        h2.meta-time {
+            font-size: px2rem(16);
+            b {
+                color: $(accentColor);
+            }
+            sup {
+                font-size: px2rem(12);
+                vertical-align: super;
+                text-transform: lowercase;
+            }
+            span.time {
+                margin-left: 10px;
+            }
+        }
+        /* end meta-time */
+        div.meta-desc {
+            margin-top: 10px;
+            font-size: px2rem(14);
+        }
+    }
+    div.event-register {
+        padding: 20px 0;
+        .btn {
+            background: $(accentColor);
+            color: #fff;
+            text-transform: uppercase;
+            font-size: px2rem(14);
+            border: 2px solid $(accentColor);
+            padding: 10px 15px;
+            @include .ease;
+        }
+        .btn:hover {
+            background: transparent;
+            border: 2px solid $(accentColor);
+            color: $(accentColor);
+        }
+    }
+}
+
+
+/* get Involved Section */
+
+#getInvolved {
+    @include .text-center;
+    color: $(textColor);
+    @include .MuseoSans;
+    .col img {
+        width: auto;
+        height: 100px;
+        margin: 10px 20px;
+    }
+    h3 {
+        margin: 25px 0 15px 0;
+    }
+    p {
+        font-size: px2rem(14);
+        padding: 10px 30px;
+        line-height: 180%;
+    }
+    .btn {
+        border: 1px solid $(accentColor);
+        padding: 10px 50px;
+        margin: 20px 10px;
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: px2rem(14);
+        @include .ease;
+    }
+    .btn:hover {
+        background: $(accentColor);
+        color: #fff;
+    }
+}
+
+
+/* Mission Section */
+
+#ourMission {
+    background: $(bgColor);
+    @include .MuseoSans;
+    @include .text-center;
+    big {
+        display: block;
+    }
+    .mission-desc {
+        line-height: 280%;
+        margin: 15px 0 35px;
+    }
+    .col {
+        @include .text-center;
+        .mission-text {
+            background: #fff;
+            position: relative;
+            z-index: 1;
+            padding: 50px 25px 40px;
+            display: block;
+            margin-top: -50px;
+            @include .ease;
+            h3 {
+                text-transform: none;
+                color: #53C0D6;
+                font-weight: 500;
+                padding: 15px 0;
+            }
+        }
+    }
+    .col:hover > .mission-text {
+        box-shadow: 0px 25px 75px #C1C1C1;
+    }
+    .col:hover > .icon-border {
+        background: #565659;
+    }
+}
+
+.icon-border {
+    width: 80px;
+    height: 80px;
+    border: 10px solid #fff;
+    border-radius: 50%;
+    background: #53C0D6;
+    display: block;
+    position: relative;
+    margin: auto;
+    z-index: 2;
+    @include .ease;
+    .icon {
+        padding: 20px 0;
+        text-align: center;
+        img {
+            width: auto;
+            height: 40px;
+        }
+    }
+}
+
+
+/* members carousel */
+
+.members-carousel {
+    margin: 50px auto;
+    h1.title:before {
+        content: " ";
+        display: block;
+        height: 1px;
+        background: #DCDDE0;
+        margin: 0 15px 50px;
+    }
+}
+
+
+/* Blog Section */
+
+#ourBlog {
+    background: #f1f2f5;
+    /* Old browsers */
+    background: linear-gradient(to bottom, #f1f2f5 0%, #f1f2f5 50%, #f1f2f5 50%, #5d5e61 50%, #5d5e61 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    padding-bottom: 0;
+    .wrapper {
+        background: #fff;
+        padding: 10px 20px;
+    }
+    h1.title {
+        @include .text-center;
+    }
+    h3.blog-title {
+        color: $(accentColor);
+        text-transform: capitalize;
+        font-weight: 600;
+    }
+    p.blog-text {
+        line-height: 180%;
+        padding: 20px 0;
+        margin: 10px 0;
+        border-bottom: 1px solid $(divColor);
+        border-top: 1px solid $(divColor);
+    }
+}
+
+
+/* footer section */
+
+footer#footer {
+    padding: 30px 0;
+    background: $(footerBgColor);
+    font-size: px2rem(17);
+    @include .text-center;
+    .footer-social {
+        A {
+            margin: 0 10px;
+        }
+    }
+    .footer-copytext {
+        margin: 40px;
+        border-top: 1px solid #575B64;
+        padding: 20px;
+        font-size: px2rem(14);
+        color: #949CB4;
+    }
+    A:hover {
+        color: #fff;
+    }
+}
+
+
+/* responsive fixes */
+
+.hideDesktop {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .heroPage {
+        div.welcomeMsg {
+            width: 80%;
+        }
+    }
+    .eventStrip {
+        .col {
+            padding: 10px;
+        }
+        .event-register {
+            padding: 10px!important;
+            .btn {
+                @include .text-center;
+                display: block;
+            }
+        }
+    }
+    #getInvolved {
+        .wrapper {
+            .col {
+                margin-top: 50px;
+            }
+        }
+    }
+    #ourMission {
+        padding: 10px 20px;
+        .col {
+            margin-top: 50px;
+        }
+    }
+    #ourBlog {
+        
+        .wrapper {
+           padding: 10px 0; 
+        }
+        
+    }
+    
+    footer#footer {
+        .footer-copytext {
+            font-size: px2rem(12);
+            margin: 40px 40px 0 ;
+        }
+    }
+}

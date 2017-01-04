@@ -1,0 +1,153 @@
+
+
+
+/* Tiny Carousel */
+
+
+/* Our Partners - Carousel */
+#slider1 {
+    height: 1%;
+    margin: 30px 0 0;
+    overflow: hidden;
+    position: relative;
+    padding: 0 50px 10px;
+     .bullets {
+        overflow: hidden;
+        list-style: none;
+        clear: both;
+        margin: auto;
+    }
+     .bullets li {
+        display: inline-block;
+    }
+     .bullet {
+        background-color: #979EB2;
+        text-decoration: none;
+        text-align: center;
+        padding: 6px;
+         margin: 0 3px;
+        display: block;
+         border-radius: 50%;
+    }
+     .bullet.active {
+        background-color: $(accentColor);
+    }
+    .viewport {
+        width: 100%;
+        height: 125px;
+        overflow: hidden;
+        position: relative;
+    }
+    .buttons {
+        background: #C01313;
+        border-radius: 35px;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 35px;
+        height: 35px;
+        color: #fff;
+        font-weight: bold;
+        text-align: center;
+        line-height: 35px;
+        text-decoration: none;
+        font-size: 22px;
+    }
+    .next {
+        right: 0;
+        left: auto;
+        top: 50%;
+    }
+    .buttons:hover {
+        color: #C01313;
+        background: #fff;
+    }
+    .overview {
+        list-style: none;
+        position: absolute;
+        padding: 0;
+        margin: 0;
+        width: 240px;
+        left: 0;
+        top: 0;
+    }
+    .disable {
+        visibility: hidden;
+    }
+    .overview li {
+        float: left;
+        margin: 0 20px 0 0;
+        padding: 1px;
+        height: 121px;
+        width: 188px;
+        position: relative;
+        line-height: 4em;
+        img {
+            max-width: 100%;
+            vertical-align: middle;
+        }
+    }
+}
+
+
+/* Blog - Carousel */
+#slider2 {
+    height: 1%;
+    overflow: hidden;
+    position: relative;
+    padding: 0 50px 10px;
+ 
+    .viewport {
+        width: 100%;
+        height: 225px;
+        overflow: hidden;
+        position: relative;
+    }
+    .buttons {
+        border-radius: 35px;
+        display: block;
+        position: absolute;
+        border: 2px solid #fff;
+        top: 35%;
+        left: 0;
+        width: 35px;
+        height: 35px;
+        color: $(accentColor);
+        text-align: center;
+        line-height: 35px;
+        text-decoration: none;
+        font-size: px2rem(50);
+        @include .ease;
+    }
+    
+    .next {
+        right: 0;
+        left: auto;
+        top: 35%;
+    }
+    .buttons:hover {
+        color: $(textColor);
+    }
+    .overview {
+        list-style: none;
+        position: absolute;
+        padding: 0;
+        margin: 0;
+        width: 240px;
+        left: 0;
+        top: 0;
+    }
+    .disable {
+        visibility: hidden;
+    }
+    .overview li {
+        float: left;
+        margin: 0 20px 0 0;
+        padding: 1px;
+        height: 121px;
+        width: 246px;
+        position: relative;
+        font-size: px2rem(14);
+    }
+}
